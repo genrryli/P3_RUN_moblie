@@ -20,7 +20,7 @@ public class move : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        float tx = Input.acceleration.x;
+        float tx = Input.acceleration.x*0.5f;
         transform.Translate(tx * t_speed * Time.deltaTime,0,0);
         float x= Mathf.Clamp(transform.position.x, -1.8f, 1.8f);
         transform.position=new Vector3(x,transform.position.y,transform.position.z);
@@ -37,6 +37,7 @@ public class move : MonoBehaviour {
 
     public void jump()
     {
+        if (gameObject.transform.position.y > 2) { return; }
         ri.AddForce(Vector3.up *jump_f);
         am.SetTrigger("jump");
     }
