@@ -59,7 +59,6 @@
      <Compile Include="Assets\scripts\i_col.cs" />
      <Compile Include="Assets\scripts\move.cs" />
      <Compile Include="Assets\scripts\player_health.cs" />
-     <None Include="Assets\ghoul\shader\ghoulshader.shader" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
  <Reference Include="UnityEngine.UI">

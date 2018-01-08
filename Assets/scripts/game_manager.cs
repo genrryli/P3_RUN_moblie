@@ -75,7 +75,7 @@ public class game_manager : MonoBehaviour {
 
     void stop_game_late()
     {
-        if (GameObject.FindWithTag("Player").GetComponent<player_health>().health == 0)
+        if (GameObject.FindWithTag("Player").gameObject.GetComponent<player_health>().health == 0)
         {
             Invoke("stop_game", 0.08f);
         }

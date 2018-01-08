@@ -13,7 +13,7 @@ public class move : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         am = GetComponent<Animator>();
-        ri = GetComponent<Rigidbody>();
+        ri = gameObject.GetComponent<Rigidbody>();
         
 	}
 
